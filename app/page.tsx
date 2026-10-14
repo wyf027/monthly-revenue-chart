@@ -433,8 +433,8 @@ export default function MonthlyRevenuePage() {
               </table>
             </div>
             <div className="mt-4 text-sm text-gray-500">
-              <p>圖表單位:千元,數據來自公開資訊觀測站</p>
-              <p>網頁圖表歡迎轉貼引用,請註明出處為財報狗</p>
+              <p>圖表單位：千元。數據為本地模擬資料，不代表實際公司營收。</p>
+              <p>本頁用於展示股票搜尋與圖表互動。</p>
             </div>
           </CardContent>
         </Card>
