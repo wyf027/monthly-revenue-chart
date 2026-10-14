@@ -217,6 +217,7 @@ export default function MonthlyRevenuePage() {
   const currentData = currentMockData[timePeriod as keyof typeof currentMockData] || []
 
   const handleLegendClick = (dataKey: string) => {
+    if (dataKey !== "revenue" && dataKey !== "growthRate") return
     setActiveLegends((prev) => ({
       ...prev,
       [dataKey]: !prev[dataKey],
@@ -304,7 +305,7 @@ export default function MonthlyRevenuePage() {
           <CardHeader className="flex flex-row items-center justify-between">
             <div>
               <CardTitle className="text-xl">每月營收</CardTitle>
-              <p className="text-sm text-gray-500 mt-1">千元</p>
+              <p className="text-sm text-gray-500 mt-1">千元 · 模擬資料展示</p>
             </div>
             <Select value={timePeriod} onValueChange={setTimePeriod}>
               <SelectTrigger className="w-32">
